@@ -83,7 +83,7 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: #329ba8;
+  background-color: #8546d5;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -110,19 +110,21 @@ input {
 /* Style the "Add" button */
 .addBtn {
   padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
+  width: 15%;
+  background: #9BAF50;
+  color: black;
   float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 10px;
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: #9BAF99;
+}
+span{padding-left:2px;
 }
 </style>
 </head>
@@ -133,7 +135,7 @@ input {
   <form action="" method="POST">
     {% csrf_token %}
     <input type="text" name="title" id="myInput" placeholder="Title...">
-    <button type="submit" class="addBtn">Add</button>
+    <span><button type="submit" class="addBtn">Add</button><span>
   </form>
 </div>
 
