@@ -5,8 +5,6 @@ from django.core.management import BaseCommand
 
 from adoption.models import Pet, Vaccine
 from pytz import UTC
-from pylab import *
-
 
 
 DATETIME_FORMAT = '%m/%d/%Y %H:%M'
